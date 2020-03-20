@@ -11,26 +11,30 @@
   </head>
 
   <body>
-	  <!-- column -->
-    <div class="row my-3 border">
-        <div class="col-sm-1 border bg-primary">col 1</div>
-        <div class="col-sm-2 border bg-secondary">col 2</div>
-		<div class="col-sm-6 border bg-warning">col 3</div>
-		<div class="col-sm-2 border bg-danger">col 4</div>
-		<div class="col-sm-1 border bg-success">col 5</div>
-	</div>
-	
 	<!-- jumbotron -->
 	<div class="jumbotron">
 		<div class="container">
 			<div class="col"><img src="paris.jpg" alt="paris home" class="img-responsive rounded mx-auto d-block img-fluid" width="304" height="236"></div>
 		</div>
 		<h1>Bootstrap Tutorial</h1>
-		<p>Bootstrap is the most popular framework for front end development</p>
+		<p>This section is an example of jumbotron</p>
+	</div>
+
+	<!-- column -->
+	<div class="container">	
+		<h2 class="text">Bootstrap Grid Example</h2>
+		<div class="row my-3">
+			<div class="col-sm-1 border bg-primary">col 1</div>
+			<div class="col-sm-2 border bg-secondary">col 2</div>
+			<div class="col-sm-6 border bg-warning">col 3</div>
+			<div class="col-sm-2 border bg-secondary">col 4</div>
+			<div class="col-sm-1 border bg-primary">col 5</div>
+		</div>
 	</div>
 
 	<!-- alert message -->
 	<div class="container">
+		<h2 class="text">Alert Message Example</h2>
 		<div class="alert alert-success">
 			<strong>Success!</strong> Indicates a successful or positive action.
 		</div>
@@ -48,6 +52,7 @@
 
 	<div class="container">
 		<!-- button -->
+		<h2 class="text">Buttons Example</h2>
 		<button type="button" class="btn">Basic</button>
 		<button type="button" class="btn btn-outline-primary">Primary</button>
 		<button type="button" class="btn btn-outline-secondary">Secondary</button>
@@ -71,6 +76,7 @@
 		
 		<br>
 		<!-- button group -->
+		<h2 class="text">Button Group Example</h2>
 		<div class="btn-group">
 			<button type="button" class="btn btn-primary">Apple</button>
 			<button type="button" class="btn btn-primary">Samsung</button>
@@ -89,43 +95,41 @@
 		<br><br>
 
 		<!-- badge -->
+		<h2 class="text">Badge Example</h2>
 		<h4>Example heading <span class="badge badge-dark">New</span></h4>
-		<h5>Example heading <span class="badge badge-success">New</span></h5>
-		<br>
+		
 		<span class="badge badge-info">info</span>
 		<span class="badge badge-success">success</span>
 		<span class="badge badge-warning">warning</span>
 		<span class="badge badge-danger">danger</span>
 		<span class="badge badge-dark">dark</span>
-		<br>
+		
 		<span class="badge badge-pill badge-info">info</span>
 		<span class="badge badge-pill badge-success">success</span>
 		<span class="badge badge-pill badge-warning">warning</span>
 		<span class="badge badge-pill badge-danger">danger</span>
 		<span class="badge badge-pill badge-dark">dark</span>
-		<br>
+		
 		<button class="btn btn-info">
 			message <span class="badge badge-pill badge-light">4</span>
 		</button>
 		<br><br>
 
 		<!-- progress bar -->
-		<div class="container">
-			<div class="progress">
-				<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 20%;"></div>
-			</div>
-			<br>
-
-			<div class="progress">
-				<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
-			</div>
-			<br>
-			
-			<div class="progress">
-				<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 60%;"></div>
-			</div>
-			<br>
+		<h2 class="text">Progress bar Example</h2>
+		<div class="progress">
+			<div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 20%;"></div>
 		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
+		</div>
+		<br>
+		<div class="progress">
+			<div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 60%;"></div>
+		</div>
+		<br>
+	
 
 		<div class="progress">
 			<div class="progress-bar bg-success" style="width:40%">
@@ -141,6 +145,7 @@
 		<br>
 
 		<!-- spinner -->
+		<h2 class="text">Spinner Example</h2>
 		<div class="spinner-border text-danger"></div>
 		<div class="spinner-grow spinner-grow-md text-info"></div>
 		<div class="spinner-border text-success"></div>
@@ -149,7 +154,8 @@
 		<br> <br>
 
 		<!-- pagination -->
-		<ul class="pagination justify-content-end">
+		<h2>Pagination Example</h2>
+		<ul class="pagination">
 			<li class="page-item"> <a class="page-link" href="#">previous</a></li>
 			<li class="page-item active"> <a class="page-link" href="#">1</a></li>
 			<li class="page-item"> <a class="page-link" href="#">2</a></li>
@@ -157,6 +163,7 @@
 		</ul>
 
 		<!-- breadcrumb -->
+		<h2 class="text">Breadcrumb Example</h2>
 		<ul class="breadcrumb">
 			<li class="breadcrumb-item"><a href="#">Photos</a></li>
 			<li class="breadcrumb-item"><a href="#">Summer 2017</a></li>
@@ -165,6 +172,7 @@
 		</ul>
 
 		<!-- list group -->
+		<h2>List-group Example</h2>
 		<ul class="list-group">
 			<li class="list-group-item list-group-item-success">active</li>
 			<li class="list-group-item list-group-item-info">second</li>
@@ -180,6 +188,7 @@
 		<br><br>
 
 		<!-- card -->
+		<h2 class="text">Card Example</h2>
 		<div class="card" style="width:400px">
 			<div class="card-header"><strong> Card Header</strong></div>
 			<img class="card-img-top" src="paris.jpg" alt="Card image" >
@@ -194,6 +203,7 @@
 		<br>
 
 		<!-- card group -->
+		<h2 class="text">Card group Example</h2>
 		<div class="card-group">
 			<div class="card bg-primary">
 			  <div class="card-body text-center">
@@ -219,6 +229,7 @@
 		<br>
 
 		<!-- dropdown menu -->
+		<h2 class="text">Dropdown menu Example</h2>
 		<div class="dropdown dropup">
 			<button type="button" class="btn btn-primary dropdown-toggle mx-auto d-block" style="width: 50%;" data-toggle="dropdown" >dropdown</button>
 			<div class="dropdown-menu dropdown-menu-right">
@@ -234,7 +245,7 @@
 
 		<!-- collapsible -->
 		<div>
-			<h2 class="text-dark">Simple Collapsible</h2>
+			<h2 class="text">Collapsible Example</h2>
 			<p class="text">testing collapsible text</p>
 			<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple Collapsible</button>
 			<div id="demo" class="collapse show">
@@ -247,7 +258,7 @@
 
 		<!-- navigation menu -->
 		<div>
-			<h3 class="text">Simple Navigation Menu</h3>
+			<h2 class="text">Navigation Menu Example</h2>
 			<ul class="nav nav-pills nav-justified justify-content-end">
 				<li class="nav-item">
 					<a class="nav-link active" href="#">Active</a> 
@@ -271,6 +282,7 @@
 
 		<!-- Toggleable / Dynamic Tabs -->
 		<div>
+			<h2 class="text">Dynamic tabs Example</h2>
 			<ul class="nav nav-pills">
 				<li class="nav-item">
 					<a class="nav-link active" data-toggle="pill" href="#work">Work</a> 
@@ -306,7 +318,7 @@
 
 	<!-- table -->
 	<div class="container table-responsive-sm">
-		<h2>Basic Table</h2>
+		<h2 class="text">Basic Table Example</h2>
 		<p>The .table class adds basic styling</p>
 		<table class="table table-md table-bordered">	
 			<thead class="thead-dark">
@@ -341,6 +353,7 @@
 	</div>
 	
 	<!-- header & paragraph -->
+	<h2 class="text">Container, header, paragraph Example</h2>
     <div class="container-sm p-3 my-3 bg-warning text-success">
         <h1>My First Bootstrap Page</h1>
         <p>This is some text.</p>
