@@ -11,7 +11,7 @@
   </head>
 
   <body>
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
 		<!-- Brand/logo -->
 		<a class="navbar-brand" href="#">
 			<img src="icon-alc.png" alt="logo" style="width:40px;">
@@ -95,8 +95,8 @@
 		</button>
 		<br><br>
 		<input type="submit"  class="btn btn-info btn-md btn-block" value="Submit Button">
-		
 		<br>
+
 		<!-- button group -->
 		<h2 class="text">Button Group Example</h2>
 		<div class="btn-group">
@@ -320,21 +320,21 @@
 			</ul>
 		</div>		
 
-		  <!-- Tab panes -->
-		  <div class="tab-content">
-			<div id="work" class="container tab-pane active"><br>
-			  <h3>Work</h3>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-			<div id="from" class="container tab-pane fade"><br>
-			  <h3>From</h3>
-			  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div>
-			<div id="home" class="container tab-pane fade"><br>
-			  <h3>Home</h3>
-			  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-			</div>
-		  </div>
+		<!-- Tab panes -->
+		<div class="tab-content">
+		<div id="work" class="container tab-pane active"><br>
+			<h3>Work</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div id="from" class="container tab-pane fade"><br>
+			<h3>From</h3>
+			<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+		<div id="home" class="container tab-pane fade"><br>
+			<h3>Home</h3>
+			<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		</div>
+		</div>
 
 		<!-- Navigation bar -->
 		<h2 class="text">Navigation bar Example</h2>
@@ -365,7 +365,6 @@
 							<a class="dropdown-item disabled" href="#">Link 1</a>
 							<a class="dropdown-item disabled" href="#">Link 2</a>
 							<a class="dropdown-item disabled" href="#">Link 3</a>
-
 						</div>
 					</li>
 
@@ -382,7 +381,40 @@
 		</nav>
 		<br>
 
+		<!-- form -->
+		<h2 class="text">Form Example</h2>
+		<form>
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<input class="form-control" type="email" id="email" placeholder="enter you email">
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input class="form-control" type="password" id="password" placeholder="enter your password">
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="checkbox">Remember me
+				</label>
+			</div>
+			<button type="submit" class="btn btn-primary">submit</button>
+		</form>
+		<br>
 
+		<!-- form inline -->
+		<form class="form-inline">
+			<label class="mr-sm-2" for="email">Email Address</label>
+			<input class="form-control mb-2 mr-sm-2" type="email" id="email" placeholder="enter you email">
+			<label class="mr-sm-2" for="password">Password</label>
+			<input class="form-control mb-2 mr-sm-2" type="password" id="password" placeholder="enter your password">
+			<div class="form-check mb-2 mr-sm-2">
+				<label class="form-check-label">
+				  <input class="form-check-input" type="checkbox"> Remember me
+				</label>
+			  </div>
+			<button type="submit" class="btn btn-primary mb-2">submit</button>
+		</form>
+		<br>
 
 		<!-- table -->
 		<div class="container table-responsive-sm">
