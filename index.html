@@ -382,7 +382,84 @@
 		</nav>
 		<br>
 
+		<!-- form validation check -->
+		<form class="was-validated">
+			<div class="form-group">
+				<label for="uname">Username</label>
+				<input class="form-control" type="text" id="uname" placeholder="Enter username" name="uname" required>
+				<div class="valid-feedback">valid</div>
+				<div class="invalid-feedback">Please fill out this form</div>
+			</div>
+			<div class="form-group">
+				<label for="pswd">Password</label>
+				<input class="form-control" type="text" id="pswd" placeholder="Enter password" name="pswd" required>
+				<div class="valid-feedback">valid</div>
+				<div class="invalid-feedback">Please fill out this form</div>
+			</div>
+			<div class="form-group form-check">
+				<label class="form-check-label">
+					<input class="form-check-input" type="checkbox" name="remeber" required>I agree on the terms
+					<div class="valid-feedback">checked</div>
+					<div class="invalid-feedback">Please check this field</div>
+				</label>
+			</div>
+			<input class="btn btn-primary" type="submit" value="submit">
+		</form>
+		<br>
 
+		<!-- Custom Form -->
+		<div class="custom-control custom-checkbox mb-3">
+			<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+			<label class="custom-control-label" for="customCheck">Custom checkbox</label>
+		</div>
+
+		<div class="custom-control custom-switch mb-3">
+			<input type="checkbox" class="custom-control-input" id="customSwitch" name="example2">
+			<label class="custom-control-label" for="customSwitch">Custom switch</label>
+		</div>
+
+		<!-- carousel -->
+		<h2 class="text">Carousel Example</h2>
+		<div id="carouselDemo" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ul class="carousel-indicators">
+			  <li data-target="#carouselDemo" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselDemo" data-slide-to="1"></li>
+			  <li data-target="#carouselDemo" data-slide-to="2"></li>
+			</ul>
+			
+			<!-- The slideshow -->
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img style="width: 100%; height: 50%;" src="paris.jpg" alt="Los Angeles">
+			  </div>
+			  <div class="carousel-item">
+				<img style="width: 100%; height: 50%;" src="paris.jpg" alt="Chicago">
+			  </div>
+			  <div class="carousel-item">
+				<img style="width: 100%; height: 50%;" src="paris.jpg" alt="New York">
+			  </div>
+			</div>
+			
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#carouselDemo" data-slide="prev">
+			  <span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#carouselDemo" data-slide="next">
+			  <span class="carousel-control-next-icon"></span>
+			</a>
+		  </div>
+		  <br>
+		  
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#carouselDemo" data-slide="prev">
+			  <span class="carousel-control-prev-icon"></span>
+			</a>
+			<a class="carousel-control-next" href="#carouselDemo" data-slide="next">
+			  <span class="carousel-control-next-icon"></span>
+			</a>
+		  
+		  </div>
 
 		<!-- table -->
 		<div class="container table-responsive-sm">
