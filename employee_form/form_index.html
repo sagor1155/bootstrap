@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employee Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="jquery-3.4.1.js"></script>
+        <script src="form_script.js"></script>
+    </head>
+    
+    <body>
+        <div class="container-sm p-3">
+            <div class="row justify-content-center text-dark">
+                <h1>Employee Form</h1>
+            </div>
+		</div>
+
+        <div class="container border">
+            <form class="form" id="form01">
+                <div class="input-group">
+                    <label for="employeeId" class="mr-2 pb-2 mt-3">ID</label>
+                    <input type="number" class="form-control mb-2 mt-2 mr-2 rounded" placeholder="enter id" id="employeeId">
+                    <label for="employeeName" class="mr-2 pb-2 mt-3">Employee Name</label>
+                    <input type="text" class="form-control mb-2 mr-2 mt-2 rounded" placeholder="enter name" id="employeeName">
+                </div>
+
+                <div class="input-group">
+                    <p>Status:</p>
+                    <div class="col-5">
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="radio_permanent" value="Permanent" name="radio_status" checked>
+                            <label class="custom-control-label" for="radio_permanent">Permanent</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" class="custom-control-input" id="radio_temporary" value="Temporary" name="radio_status">
+                            <label class="custom-control-label" for="radio_temporary">Temporary</label>
+                        </div>
+                    </div>
+
+                    <label for="district_select" class="pb-2 mt-2">District</label>
+                    <select class="form-control mx-2 rounded" id="district_select">
+                        <option>Dhaka</option>
+                        <option>Bogra</option>
+                        <option>Rangpur</option>
+                        <option>Kurigram</option>
+                    </select>
+                </div>
+        
+                <br>
+                <div class="d-flex flex-inline">
+                    <p class="text mr-2">Job Description:</p>
+                    <div class="custom-control custom-checkbox mb-2 mr-2">
+                        <input type="checkbox" class="custom-control-input" id="UX" name="UX" value="UX">
+                        <label class="custom-control-label" for="UX">UX</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox mb-2 mr-2">
+                        <input type="checkbox" class="custom-control-input" id="DEV" name="DEV" value="DEV" checked>
+                        <label class="custom-control-label" for="DEV">DEV</label>
+                    </div>
+
+                    <div class="custom-control custom-checkbox mb-2 mr-2">
+                        <input type="checkbox" class="custom-control-input" id="DB" name="DB" value="DB">
+                        <label class="custom-control-label" for="DB">DB</label>
+                    </div>
+                </div>
+
+                <div class="text-right">
+                    <input type="submit" class="btn btn-success mb-2 mr-2" id="submit_button" name="submit_button">
+                    <input type="reset"  class="btn btn-warning mb-2 mr-2" id="reset_button"  name="reset_button">
+                </div>
+            </form>
+        </div>
+        <br><br>
+        
+        <!-- table -->
+		<div class="container table-responsive-sm ">
+			<h2 class="text text-info">Employee Table</h2>
+			<table class="table table-sm table-bordered text-center" id="table01">	
+				<thead class="thead-dark">
+					<tr>
+						<th>ID</th>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>JD</th>
+						<th>District</th>
+					</tr>
+				</thead>
+			</table>
+        </div>      
+
+    </body>
+</html>
