@@ -1,6 +1,5 @@
 
 $(document).ready(function(){
-
     $("#submit_button").click(function(event){
         event.preventDefault();
         createTableBody(
@@ -38,15 +37,10 @@ $(document).ready(function(){
         var jobDescriptionDev = $('input[name=DEV]:checked').val();
         var jobDescriptionDb  = $('input[name=DB]:checked').val();
     
-        if(jobDescriptionUx){
-            jobDescription += " UX";
-        }
-        if(jobDescriptionDev){
-            jobDescription += " DEV";
-        }
-        if(jobDescriptionDb){
-            jobDescription += " DB";
-        }
+        jobDescription = (jobDescriptionUx ? jobDescriptionUx : '') + 
+            (jobDescriptionDev ? ((jobDescriptionUx? ('-' + jobDescriptionDev) : jobDescriptionDev)):'') +
+            (jobDescriptionDb ? (((jobDescriptionUx || jobDescriptionDev)? ('-' + jobDescriptionDb) : jobDescriptionDb)):'');
+    
         return jobDescription;
     }
 });
